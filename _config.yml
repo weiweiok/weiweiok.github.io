@@ -1,10 +1,10 @@
 
 # 站点设置
 title: weiwei.blog
-brief-intro: haojixing buru lanbitou
+description: haojixing buru lanbitou
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://weiweiok.github.io" # the base hostname & protocol for your site
-permalink: /:year/:month/:day/:title/
+permalink: /:year_:month_:day_:title.html
 
 # Markdown 渲染引擎设置
 markdown: kramdown
@@ -17,4 +17,4 @@ excerpt_separator: "\n\n\n\n"
 
 # 分页设置
 gems: [jekyll-paginate]
-paginate: 6
+paginate: 5
