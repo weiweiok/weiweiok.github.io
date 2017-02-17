@@ -1,36 +1,14 @@
-hello weiwei!
+---
+layout: default
+title: weiwei blog
+---
 
-------------
 
-Github Pages 官方介绍 
-https://pages.github.com/
-
-阮一峰的教程
-http://www.ruanyifeng.com/blog/2012/08/blogging_with_jekyll.html
-
-beiyuu的教程
-http://beiyuu.com/github-pages
-
-------------
-
-Hexo官网
-https://hexo.io/zh-cn/
-
-Hexo作者博客
-https://zespia.tw/blog/2012/10/11/hexo-debut/
-
-Hexo教程
-http://ibruce.info/2013/11/22/hexo-your-blog/
-
-Hugo官网
-http://gohugo.io/overview/introduction/
-
-------------
-
-在线的MakeDown编辑器
-https://maxiang.io
-
-还没看完的文章
-http://www.jianshu.com/p/380290deb8f0
-
+<h2>{{ page.title }}</h2>
+<p>最新文章</p>
+<ul>
+{% for post in site.posts %}
+<li>{{ post.date }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+{% endfor %}
+</ul>
 
