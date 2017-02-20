@@ -21,11 +21,9 @@
     
         <div>
             <a href="/">首页</a>&nbsp;&gt;&nbsp;{% include category.html %}
-            <hr>
-            {{page.categories}}|{{page.id}}|{{page.path}}
         </div>
         <ul>
-            {% for post in paginator.posts %}
+            {% for post in site.categories[page.categories] %}
             <li>
             <h2>
                 <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
