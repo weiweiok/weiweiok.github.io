@@ -20,14 +20,7 @@
     <div class="content">
     
         <div>
-            <a href="/">首页</a>
-            {% for category in site.categories %}
-            {% for cat in site.ww_categories %}
-                {% if category[0] == cat[0] %}
-                &nbsp;&gt;&nbsp;<a href="/{{cat[0]}}">{{cat[1]}}</a>
-                {% endif %}
-            {% endfor %}
-            {% endfor %}
+            <a href="/">首页</a>&nbsp;&gt;&nbsp;{% include category.html %}
             <hr>
             {{page.categories}}|{{page.id}}|{{page.path}}
         </div>
