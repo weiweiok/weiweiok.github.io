@@ -1,7 +1,7 @@
 ---
 layout: item
 title:  "前端如何写一个精确的倒计时"
-categories: JavaScript
+categories: php
 author: HyG
 ---
 
