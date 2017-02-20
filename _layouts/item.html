@@ -8,14 +8,14 @@
     
     <div class="content">
     
-        <h1>{{ post.title }}</h1>
+        <h1>{{ page.title }}</h1>
         
         <div class="label">
             <div class="label-card">
-                <i class="fa fa-calendar"></i>{{ post.date | date: "%F" }}
+                <i class="fa fa-calendar"></i>{{ page.date | date: "%F" }}
             </div>
             <div class="label-card">
-                {% if post.author %}<i class="fa fa-user"></i>{{ post.author }}{% endif %}
+                {% if page.author %}<i class="fa fa-user"></i>{{ page.author }}{% endif %}
             </div>
             <div class="label-card">
                 {% include category.html %}
