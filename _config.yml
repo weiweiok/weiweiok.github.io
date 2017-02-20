@@ -4,7 +4,7 @@ title: weiwei.blog
 description: haojixing buru lanbitou
 url: "https://weiweiok.github.io" # the base hostname & protocol for your site
 baseurl: "" # the subpath of your site, e.g. /blog
-permalink: /:categories/:title.html
+# permalink: /:categories/:title.html
 
 # 分类设置
 ww_categories: [
