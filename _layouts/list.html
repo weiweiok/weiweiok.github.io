@@ -19,6 +19,9 @@
     
     <div class="content">
     
+        <div>
+            {% for cat in site.all_categories %}{% if page.category == cat[0] %}<a href="/">首页</a>&nbsp;&lt;&nbsp;<a href="{{cat[2]}}">{{cat[1]}}</a>&nbsp;&lt;&nbsp;列表{% endif %}{% endfor %}
+        </div>
         <ul>
             {% for post in site.categories[page.category] %}
             <li>
@@ -30,17 +33,11 @@
                     <i class="fa fa-calendar"></i>{{ post.date | date: "%F" }}
                 </div>
                 <div class="label-card">
-                    {% if post.author %}<i class="fa fa-user"></i>{{ post.author }}
-                    {% endif %}
+                    {% if post.author %}<i class="fa fa-user"></i>{{ post.author }} {% endif %}
                 </div>
-                <div class="label-card">
-                    {% if page.meta %}<i class="fa fa-key"></i>{{ page.meta }}  {% endif %}
-                </div>
-
                 <div class="label-card">
                 {% include category.html %}
                 </div>
-
             </div>
             <div class="excerpt">
                 {{post.excerpt}}
