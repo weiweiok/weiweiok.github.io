@@ -1,12 +1,23 @@
 
-encoding: UTF-8
-
 # 站点设置
 title: weiwei.blog
 description: haojixing buru lanbitou
-baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://weiweiok.github.io" # the base hostname & protocol for your site
-permalink: /:year_:month_:day_:title.html
+baseurl: "" # the subpath of your site, e.g. /blog
+permalink: /:categories/:title.html
+
+# 分类设置
+ww_categories: [
+["php",        "PHP笔记",  "/php"], 
+["JavaScript", "JS笔记",   "/js"],
+["GitHub",     "GIT笔记",  "/git"]
+]
+
+
+
+
+# 编码设置
+encoding: UTF-8
 
 # Markdown 渲染引擎设置
 markdown: kramdown
