@@ -1,7 +1,7 @@
 ---
 layout: item
 title:  "Fisher–Yates shuffle 洗牌算法"
-categories: JavaScript
+categories: js
 author: HyG
 ---
 

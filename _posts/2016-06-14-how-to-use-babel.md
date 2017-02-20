@@ -1,7 +1,7 @@
 ---
 layout: item
 title:  "如何使用 babel"
-categories: JavaScript
+categories: js
 ---
 
 * content

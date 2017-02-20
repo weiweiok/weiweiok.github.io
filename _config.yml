@@ -8,9 +8,9 @@ permalink: /:categories/:title.html
 
 # 分类设置
 ww_categories: [
-["php",        "PHP笔记",  "/php"], 
-["JavaScript", "JS笔记",   "/js"],
-["GitHub",     "GIT笔记",  "/git"]
+["php",  "PHP笔记"], 
+["js",   "javascript"],
+["git",  "github"]
 ]
 
 

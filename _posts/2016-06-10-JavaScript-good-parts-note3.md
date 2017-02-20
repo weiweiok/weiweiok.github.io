@@ -1,7 +1,7 @@
 ---
 layout: item
 title:  "JavaScript 语言精粹笔记3-方法、毒瘤等"
-categories: JavaScript
+categories: js
 ---
 
 * content
