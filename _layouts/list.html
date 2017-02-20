@@ -23,7 +23,12 @@
             <a href="/">首页</a>&nbsp;&gt;&nbsp;{% include category.html %}
         </div>
         <ul>
-            {% for post in site.categories[page.categories] %}
+            {% if paginator.posts %}
+                {% assign post_list = paginator.posts %}
+            {% else %}
+                {% assign post_list = site.categories[page.categories] %}
+            {% endif %}
+            {% for post in post_list %}
             <li>
             <h2>
                 <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
