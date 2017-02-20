@@ -11,7 +11,8 @@
         <li>
             <a href="{{ root_url }}/list#{{ category | first }}" class="categories-list-item" cate="{{ category | first }}">
                 {% for cat in site.ww_categories %}
-                    {% if category | first == cat[0] %}
+                    {{cat[1]}}
+                    {% if category[0] == cat[0] %}
                         {{cat[1]}}
                     {% endif %}
                 {% endfor %}
