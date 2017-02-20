@@ -24,7 +24,7 @@
             {% for category in site.categories %}
             {% for cat in site.ww_categories %}
                 {% if category[0] == cat[0] %}
-                &nbsp;&lt;&nbsp;<a href="/{{cat[0]}}">{{cat[1]}}</a>
+                &nbsp;&rt;&nbsp;<a href="/{{cat[0]}}">{{cat[1]}}</a>
                 {% endif %}
             {% endfor %}
             {% endfor %}
@@ -32,7 +32,7 @@
             {{page.categories}}|{{page.id}}
         </div>
         <ul>
-            {% for post in site.categories[page.category[0]] %}
+            {% for post in paginator.posts %}
             <li>
             <h2>
                 <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
