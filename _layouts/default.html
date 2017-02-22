@@ -10,9 +10,8 @@
 	    <div class="left_box categories">
 	    	{% for category in site.categories %}
 	        <li>
-	            <a href="{{ root_url }}/{{ category | first }}"> 
-	                {% for cat in site.ww_categories %}{% if category[0] == cat[0] %}{{cat[1]}}{% endif %}{% endfor %}
-	                <span>({{ category | last | size }})</span>
+	            <a href="{{ root_url }}/{{ category | first }}" {% if page.categories[0] == category %}class="active"{% endif %}> 
+	                {% for cat in site.ww_categories %}{% if category[0] == cat[0] %}{{cat[1]}}{% endif %}{% endfor %}<span>({{ category | last | size }})</span>
 	            </a>
 	        </li>
 	        {% endfor %}
@@ -41,7 +40,7 @@
 	            <div class="label">
 	            	<span>{{ post.date | date: "%F" }}</span>
 	            	{% if post.author %}<span>{{ post.author }}</span>{% endif %}
-	            	{% unless category_size == '0' %}<span>{{ categories }}</span>{% endunless %}
+	            	{% if post.categories[0]}<a href="{{ root_url }}/{{ post.categories[0] }}">{{ post.categories[0] }}</a>{% endif %}
 	            </div>
 	            <div class="excerpt">
 	                {{post.excerpt}}
