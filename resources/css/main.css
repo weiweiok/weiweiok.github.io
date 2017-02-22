@@ -45,7 +45,7 @@ header {
 		min-width: 160px;
 		max-width: 360px;
 		margin-bottom: 20px;
-		margin-right: 20px;
+		margin-right: 30px;
 		}
 		.left_box a{
 			display: block;
@@ -64,6 +64,12 @@ header {
 		.outline li{
 			list-style-type:circle;
 			list-style-position: inside;
+		}
+		.outline ul{
+            margin-left: 10px;
+        }
+		.outline >a{
+		    margin-bottom: 10px;
 		}
 		.outline a{
 			display: inline;
@@ -128,7 +134,7 @@ header {
 
 article {
 	line-height: 2;
-	font-family: "Source Code Pro",monospace;
+	font-family: "Source Code Pro", monospace, simsun;
 	margin-bottom:50px;
 	}
 	article #markdown-toc {
