@@ -66,10 +66,10 @@ header {
 			list-style-position: inside;
 		}
 		.outline ul{
-            margin-left: 10px;
+            margin-left: 15px;
         }
 		.outline >a{
-		    margin-bottom: 10px;
+		    margin-bottom: 20px;
 		}
 		.outline a{
 			display: inline;

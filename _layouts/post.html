@@ -21,7 +21,7 @@
 	        	<div class="info">
 	        		{% if page.author=="weiwei" %}
 		        	<p>版权协议：<a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh" target="_blank">自由转载-保持署名-非商业性使用-禁止演绎 4.0</a></p>
-		        	<p>本文地址：<a href="#">{{ root_url }}{{ page.url }}</a></p>
+		        	<p>本文地址：<a href="#">{{ site.url }}{{ page.url }}</a></p>
 		        	<p>发布日期：{{ page.date | date: "%F" }}</p>
 		        	{% else %}
 		        	<p>原文作者：{{ page.author }}</p>
@@ -29,7 +29,9 @@
 		        	<p>转载日期：{{ page.date | date: "%F" }}</p>
 		        	{% endif %}
 	        	</div>
-	        	<div class="qrcode"></div>
+	        	<div class="qrcode">
+	        	    <img src="http://qr.liantu.com/api.php?el=l&m=0&text={{ site.url }}{{ page.url }}" alt="手机扫码访问本文" />
+	        	</div>
 	        </div>
         	{{content}}
         </article>
