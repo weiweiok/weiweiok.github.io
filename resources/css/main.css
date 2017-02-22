@@ -112,6 +112,9 @@ header {
     	line-height: 2;
     	font-family: "楷体";
     }
+    .right .right_box .excerpt a{
+        color:#666;
+    }
     .right .read-all {
     	background: #c00;
     	color: #fff;
