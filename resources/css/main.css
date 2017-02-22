@@ -61,16 +61,17 @@ header {
 		.categories span{
 			margin-left: 0px;
 		}
-		.outline li{
-			list-style-type:circle;
-			list-style-position: inside;
+		
+		.outline ol{
+		    margin-top: 20px;
 		}
 		.outline ul{
             margin-left: 15px;
         }
-		.outline >a{
-		    padding-bottom: 20px;
-		}
+        .outline li{
+            list-style-type:circle;
+            list-style-position: inside;
+        }
 		.outline a{
 			display: inline;
 			padding: 0;
@@ -136,6 +137,10 @@ article {
 	line-height: 2;
 	font-family: monaco, consolas, "宋体";
 	margin-bottom:50px;
+	}
+	article * {
+	    line-height: 2;
+        font-family: monaco, consolas, "宋体";
 	}
 	article #markdown-toc {
 		display: none;
