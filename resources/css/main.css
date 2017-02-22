@@ -59,7 +59,7 @@ header {
 			background: rgba(248,0,59,0.1)
 		}
 		.categories span{
-			margin-left: 5px;
+			margin-left: 0px;
 		}
 		.outline li{
 			list-style-type:circle;
@@ -69,7 +69,7 @@ header {
             margin-left: 15px;
         }
 		.outline >a{
-		    margin-bottom: 20px;
+		    padding-bottom: 20px;
 		}
 		.outline a{
 			display: inline;
@@ -134,7 +134,7 @@ header {
 
 article {
 	line-height: 2;
-	font-family: "Source Code Pro", monospace, simsun;
+	font-family: monaco, consolas, "宋体";
 	margin-bottom:50px;
 	}
 	article #markdown-toc {
@@ -176,8 +176,12 @@ article {
     	width:70px;
     	height:70px;
     	background: #ccc;
-    	margin-top: -68px;
+    	margin-top: -70px;
 	}
+	article .copyright .qrcode img{
+        width:70px;
+        height:70px;
+    }
 	article blockquote{
 		color: #999;
 		background: rgba(0,0,0,0.05);
