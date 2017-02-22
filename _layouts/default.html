@@ -50,7 +50,7 @@
             {% endfor %}
         </ul>
         
-        {% if page.categories != "" %}
+        {% if page.categories==falsy %}
         <div class="pagination" title="{{ page.categories }}">
 			{% if paginator.previous_page %}
 		    <a href="/index.html" class="previous">首页</a>
