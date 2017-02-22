@@ -1,5 +1,5 @@
 ---
-layout: item
+layout: post
 title:  "Fisher–Yates shuffle 洗牌算法"
 categories: js
 author: HyG

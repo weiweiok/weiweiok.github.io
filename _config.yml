@@ -1,10 +1,10 @@
 
 # 站点设置
-title: weiwei.blog
-description: haojixing buru lanbitou
-url: "https://weiweiok.github.io" # the base hostname & protocol for your site
-baseurl: "" # the subpath of your site, e.g. /blog
-# permalink: /:categories/:title.html
+title: 阮二峰博客
+description: weiwei.blog
+url: "https://weiweiok.github.io"
+baseurl: ""
+permalink: /:categories/:title.html
 
 # 分类设置
 ww_categories: [
@@ -22,7 +22,6 @@ encoding: UTF-8
 # Markdown 渲染引擎设置
 markdown: kramdown
 kramdown:
-input: GFM
 syntax_highlighter: rouge
 
 # 摘要分隔符设置

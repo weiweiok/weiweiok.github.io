@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% include head.html %}
+</head>
+<body>
+    {% include header.html %}
+    
+	<div class="left">
+		<div class="left_box outline">
+	        <a href="javascript:history.go(-1);">&lt; 返回</a>
+	    </div>
+	</div>
+	
+	<div class="right">
+		
+        <article>
+        	<h2>{{ page.title }}</h2>
+	        <p class="read">阅读:<span id="busuanzi_value_page_pv">0</span></p>
+	        <div class="copyright">
+	        	<div class="info">
+	        		{% if page.author=="weiwei" %}
+		        	<p>版权协议：<a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh" target="_blank">自由转载-保持署名-非商业性使用-禁止演绎 4.0</a></p>
+		        	<p>本文地址：<a href="#">{{ page.url | prepend: site.baseurl }}</a></p>
+		        	<p>发布日期：{{ page.date | date: "%F" }}</p>
+		        	{% else %}
+		        	<p>原文作者：{{ page.author }}</p>
+		        	<p>原文地址：<a href="{{ page.source_url }}">{{ page.source_url }}</a></p>
+		        	<p>转载日期：{{ page.date | date: "%F" }}</p>
+		        	{% endif %}
+	        	</div>
+	        	<div class="qrcode"></div>
+	        </div>
+        	{{content}}
+        </article>
+        
+        <div class="plugin">
+        	<div class="pre">
+                {% if page.previous %}
+                <p><strong>上一篇</strong> <a href="{{ page.previous.url | prepend: site.baseurl }}">{{ page.previous.title }}</a></p>
+                {% endif %}
+            </div>
+            <div class="nex">
+                {% if page.next %}
+                <p><strong>下一篇</strong> <a href="{{ page.next.url | prepend: site.baseurl }}">{{ page.next.title }}</a></p>
+                {% endif %}
+            </div>
+        </div>
+        
+        <div class="comment">
+        </div>
+        
+        {% include footer.html %}
+    </div>
+
+	<script type="text/javascript">
+		// 目录
+		var TOCString = document.querySelector('#markdown-toc').innerHTML
+        var contentUl = document.querySelector('.outline')
+        contentUl.insertAdjacentHTML('afterend', TOCString);
+	</script>
+</body>
+</html>
