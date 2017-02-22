@@ -3,7 +3,6 @@
 title: Weiwei.Blog
 description: 魏伟的技术博客
 url: "https://weiweiok.github.io"
-baseurl: ""
 permalink: /:categories/:title.html
 
 # 分类设置

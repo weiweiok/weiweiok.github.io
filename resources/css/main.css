@@ -24,7 +24,7 @@ header {
 		color: #000;
 	}
 	header h1 a:hover{
-        color: #333;
+        color: #666;
     }
 	header p {
 		margin-left: 100px;;
@@ -221,6 +221,10 @@ article {
 	article ol,
 	article ul {
 		margin-left: 20px;
+		list-style-position:inside;
+	}
+	article ol li {
+	    list-style-type: decimal;
 	}
 	article ul li {
 		list-style-type: square;
