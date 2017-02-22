@@ -115,7 +115,7 @@ header {
     .right .right_box .excerpt a{
         color:#666;
     }
-    .right .read-all {
+    .right .right_box .excerpt a.read-all {
     	background: #c00;
     	color: #fff;
     	border-radius: 5px;
