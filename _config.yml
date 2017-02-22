@@ -1,7 +1,7 @@
 
 # 站点设置
-title: 阮二峰博客
-description: weiwei.blog
+title: Weiwei.Blog
+description: 魏伟的技术博客
 url: "https://weiweiok.github.io"
 baseurl: ""
 permalink: /:categories/:title.html
