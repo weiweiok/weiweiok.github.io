@@ -10,7 +10,7 @@
 	    <div class="left_box categories">
 	    	{% for category in site.categories %}
 	        <li>
-	            <a href="{{ root_url }}/{{ category | first }}" {% if page.categories == category[0] %}class="active"{% endif %}> 
+	            <a href="{{ root_url }}/{{ category | first }}" {% if page.categories == category|first %}class="active"{% endif %}> 
 	                {% for cat in site.ww_categories %}{% if category[0] == cat[0] %}{{cat[1]}}{% endif %}{% endfor %}<span>({{ category | last | size }})</span>
 	            </a>
 	        </li>
@@ -40,7 +40,7 @@
 	            <div class="label">
 	            	<span>{{ post.date | date: "%F" }}</span>
 	            	{% if post.author %}<span>{{ post.author }}</span>{% endif %}
-	            	{% if post.categories %}<a href="{{ root_url }}/{{ post.categories }}">{{ post.categories }}</a>{% endif %}
+	            	{% if post.categories %}<a href="{{ root_url }}/{{ post.categories }}"><span>{{ post.categories }}</a></span>{% endif %}
 	            </div>
 	            <div class="excerpt">
 	                {{post.excerpt}}
@@ -50,7 +50,7 @@
             {% endfor %}
         </ul>
         
-        {% if page.categories %}
+        {% if !page.categories %}
         <div class="pagination">
 			{% if paginator.previous_page %}
 		    <a href="/index.html" class="previous">首页</a>
