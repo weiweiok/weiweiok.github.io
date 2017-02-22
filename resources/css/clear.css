@@ -2,7 +2,7 @@
 
 /* CSS Format */
 
-html,body,div,p,ul,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,form,input,select,button,textarea,iframe,table,th,td,hr { margin: 0; padding: 0; }
+html,body,div,p,ol,ul,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,form,input,select,button,textarea,iframe,table,th,td,hr { margin: 0; padding: 0; }
 img { border: 0 none; vertical-align: top; }
 ul,li { list-style-type: none; }
 table { border-collapse:collapse; border-spacing:0; empty-cells:show; }

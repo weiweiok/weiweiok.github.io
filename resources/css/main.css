@@ -134,13 +134,13 @@ header {
 }
 
 article {
-	line-height: 2;
-	font-family: monaco, consolas, "宋体";
 	margin-bottom:50px;
 	}
-	article * {
+	article > p,
+	article > blockquote{
 	    line-height: 2;
-        font-family: monaco, consolas, "宋体";
+        font-family: "宋体";
+        font-size: 18px;
 	}
 	article #markdown-toc {
 		display: none;
