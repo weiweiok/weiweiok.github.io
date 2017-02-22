@@ -1,14 +1,14 @@
 
 # 站点设置
 title: Weiwei.Blog
-description: 魏伟的技术博客
-url: "https://weiweiok.github.io"
+description: 魏伟的博客
+url: "http://weiwei.blog"
 permalink: /:categories/:title.html
 
 # 分类设置
 ww_categories: [
 ["php",  "PHP笔记"], 
-["js",   "javascript"],
+["js",   "JavaScript"],
 ["git",  "github"]
 ]
 

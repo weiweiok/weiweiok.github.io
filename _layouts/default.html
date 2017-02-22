@@ -10,7 +10,7 @@
 	    <div class="left_box categories">
 	    	{% for category in site.categories %}
 	        <li>
-	            <a href="{{ site.url }}/{{ category | first }}" {% if page.categories == category[0] %}class="active"{% endif %}> 
+	            <a href="/{{ category | first }}" {% if page.categories == category[0] %}class="active"{% endif %}> 
 	                {% for cat in site.ww_categories %}{% if category[0] == cat[0] %}{{cat[1]}}{% endif %}{% endfor %}<span>({{ category | last | size }})</span>
 	            </a>
 	        </li>
