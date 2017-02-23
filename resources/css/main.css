@@ -129,15 +129,21 @@ header {
     }
     .right .pagination span,
     .right .pagination a{
-        /*display: block;*/
         text-align: center;
         padding: 10px;
+        border:1px solid #cccccc;
         border-radius: 3px;
-        background: #eee;
+        background: #fff;
         margin: 5px;;
     }
     .right .pagination .current{
-        background: #ccf;
+        background: #ff6688;
+        color: #fff;
+    }
+    .right .pagination span:hover,
+    .right .pagination a:hover{
+        border-color: #ff6688;
+        color: #ff6688;
     }
 	.right .comment {
     	border-top: 1px dashed #ccc;
