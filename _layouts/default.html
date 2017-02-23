@@ -70,7 +70,9 @@
 			<span class="current">1</span>
 			{% else %}
     			{% for count in (1..paginator.total_pages) %}
-    			{% if count > 1 and count < paginator.total_pages and count>(paginator.page|minus:2) and count<(paginator.page|plus:2) %}
+    			{% assign limit_left = paginator.page | minus: 2 %}
+    			{% assign limit_right = paginator.page | plus: 2 %}
+    			{% if count > 1 and count < paginator.total_pages and count>limit_left and count<limit_right %}
                 {% if count == paginator.page %}
                 <span class="current">{{count}}</span>
                 {% else %}
