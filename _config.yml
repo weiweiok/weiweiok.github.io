@@ -28,4 +28,4 @@ excerpt_separator: "\n\n\n\n"
 
 # 分页设置
 gems: [jekyll-paginate]
-paginate: 5
+paginate: 1

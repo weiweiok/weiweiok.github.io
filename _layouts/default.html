@@ -60,29 +60,31 @@
 			
 			{% if paginator.total_pages > 1 %}
 			{% if paginator.page > 1 %}
-			<a href="/}">1 ...</a>
+			<a href="/">1 ...</a>
 			{% else %}
-			<a href="/}">1</a>
+			<span class="current">1</span>
 			{% endif %}
 			{% endif %}
 			
 			{% if paginator.total_pages == 1 %}
 			<span class="current">1</span>
 			{% else %}
-    			{% for count in (1..paginator.total_pages) %}
-                {% if count == paginator.page %}
-                <span class="current">{{count}}</span>
-                {% else %}
-                <a href="/page{{count}}">{{count}}</a>
-                {% endif %}
-                {% endfor %}
+			{% for count in (1..paginator.total_pages) %}
+			{% if count > 1 and count <  paginator.total_pages and count>paginator.page-2 and count<paginator.page+2 %}
+            {% if count == paginator.page %}
+            <span class="current">{{count}}</span>
+            {% else %}
+            <a href="/page{{count}}">{{count}}</a>
+            {% endif %}
+            {% endif %}
+            {% endfor %}
 			{% endif %}
 			
 			{% if paginator.total_pages > 1 %}
 			{% if paginator.page < paginator.total_pages %}
-            <a href="/}">... {{ paginator.total_pages }}</a>
+            <a href="/page{{ paginator.total_pages }}"}">... {{ paginator.total_pages }}</a>
             {% else %}
-            <a href="/page{{ paginator.total_pages }}}">{{ paginator.total_pages }}</a>
+            <span class="current">{{ paginator.total_pages }}</span>
             {% endif %}
             {% endif %}
             
