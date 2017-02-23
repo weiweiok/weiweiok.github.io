@@ -51,7 +51,6 @@ header {
 		.left_box a{
 			display: block;
 			padding: 4px;
-			font-family: "楷体";
 			color: #666;
 			font-size: 18px;
 			margin-bottom: 1px;
@@ -80,6 +79,7 @@ header {
 			display: inline;
 			padding: 0;
 			line-height: 1.5;
+			font-family: "楷体";
 }
 
 .right {
@@ -131,13 +131,14 @@ header {
     .right .pagination span,
     .right .pagination a{
         text-align: center;
-        padding: 10px;
+        padding: 5px 10px;
         border:1px solid #cccccc;
         border-radius: 3px;
         background: #fff;
         margin: 5px;
         font-size: 16px;
         line-height: 16px;
+        color: #000;
     }
     .right .pagination .current{
         background: #ff6688;
