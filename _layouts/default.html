@@ -69,15 +69,15 @@
 			{% if paginator.total_pages == 1 %}
 			<span class="current">1</span>
 			{% else %}
-			{% for count in (1..paginator.total_pages) %}
-			{% if count > 1 and count <  paginator.total_pages and count>(paginator.page-2) and count<(paginator.page+2) %}
-            {% if count == paginator.page %}
-            <span class="current">{{count}}</span>
-            {% else %}
-            <a href="/page{{count}}">{{count}}</a>
-            {% endif %}
-            {% endif %}
-            {% endfor %}
+    			{% for count in (1..paginator.total_pages) %}
+    			{% if count > 1 and count < paginator.total_pages and count>1 and count<5 %}
+                {% if count == paginator.page %}
+                <span class="current">{{count}}</span>
+                {% else %}
+                <a href="/page{{count}}">{{count}}</a>
+                {% endif %}
+                {% endif %}
+                {% endfor %}
 			{% endif %}
 			
 			{% if paginator.total_pages > 1 %}
