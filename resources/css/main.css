@@ -129,11 +129,12 @@ header {
     }
     .right .pagination span,
     .right .pagination a{
-        display: block;
+        /*display: block;*/
         text-align: center;
         padding: 10px;
         border-radius: 3px;
-        background: #ccc;
+        background: #eee;
+        margin: 5px;;
     }
     .right .pagination .current{
         background: #ccf;
