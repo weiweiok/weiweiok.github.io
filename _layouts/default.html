@@ -51,21 +51,47 @@
         </ul>
         
         {% if page.categories==falsy %}
-        <div class="pagination" title="{{ page.categories }}">
+        <div class="pagination">
 			{% if paginator.previous_page %}
-		    <a href="/index.html" class="previous">首页</a>
-			<a href="{{ paginator.previous_page_path }}" class="previous">上一页</a>
+			<a    class="previous" href="{{ paginator.previous_page_path }}">«</a>
 			{% else %}
-		    <span class="previous disable">首页</span>
-			<span class="previous disable">上一页</span>
+			<span class="previous">«</span>
 			{% endif %}
-			<span class="page_number ">{{ paginator.page }} / {{ paginator.total_pages }}</span>
-			{% if paginator.next_page %}
-		    <a href="{{ paginator.next_page_path }}" class="next">下一页</a>
-			<a href="/page{{ paginator.total_pages }}" class="next">末页</a>
+			
+			{% if paginator.total_pages > 1 %}
+			{% if paginator.page > 1 %}
+			<a href="/}">1 ...</a>
 			{% else %}
-		    <span class="next disable">下一页</span>
-			<span class="next disable">末页</span>
+			<a href="/}">1</a>
+			{% endif %}
+			{% endif %}
+			
+			{% if paginator.total_pages == 1 %}
+			<span class="current">1</span>
+			{% else %}
+    			{% for count in (2..paginator.total_pages-1) %}
+                {% if count == paginator.page %}
+                <span class="current">{{count}}</span>
+                {% else %}
+                <a href="/page{{count}}">{{count}}</a>
+                {% endif %}
+                {% endfor %}
+			{% endif %}
+			
+			{% if paginator.total_pages > 1 %}
+			{% if paginator.page < paginator.total_pages %}
+            <a href="/}">... {{ paginator.total_pages }}</a>
+            {% else %}
+            <a href="/}">{{ paginator.total_pages }}</a>
+            {% endif %}
+            {% endif %}
+            
+			<span class="page_number ">{{ paginator.page }} / {{ paginator.total_pages }}</span>
+			
+			{% if paginator.next_page %}
+		    <a    class="next" href="{{ paginator.next_page_path }}" >»</a>
+			{% else %}
+		    <span class="next">»</span>
 			{% endif %}
         </div>
         {% endif %}
