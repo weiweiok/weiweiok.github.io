@@ -175,6 +175,7 @@ article {
 	    line-height: 2;
         font-family: simsun,"宋体";
         font-size: 18px;
+        word-wrap:break-word ;
 	}
 	article #markdown-toc {
 		display: none;
