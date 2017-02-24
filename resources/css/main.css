@@ -289,6 +289,7 @@ footer {
     margin-bottom:15px;
     font-size: 18px;
     border: 1px solid #666;
+    padding: 5px;
     }
     .mobile_content a {
         float: left;
@@ -299,27 +300,31 @@ footer {
 }
 
 @media screen and (max-width: 361px) {
-    .mobile_nav{
+    .mobile_nav,
+    .mobile_content{
         display: block;
     }
     .left {
         display: none;
+        width: 100%;
+    }
+    .mobile_nav+.left {
         background:rgba(0,0,0,0.5);
         border-radius: 5px;
-        width: 100%;
         margin: -15px 0 20px 0;
     }
-    .left_box {
+    .mobile_nav+.left .left_box {
         float:left;
         margin: 10px;
     }
-    .left_box a{
+    .mobile_nav+.left .left_box a{
         color:#fff;
     }
-    .left .outline {
+    .mobile_content+.left {
         border: 1px solid #666;
+        margin: -21px 0 20px 0;
     }
-    .left .outline > a{
+    .mobile_content+.left .outline > a{
         display: none;
     }
 } 
