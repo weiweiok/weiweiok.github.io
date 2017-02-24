@@ -37,8 +37,6 @@ header {
 	
 }
 
-
-
 .left {
 	float: left;
 	}
@@ -86,6 +84,7 @@ header {
 
 .right {
 	float: left;
+	width: 100%;
 	max-width: 800px;
     min-width: 320px;
     margin-bottom: 10px;
@@ -190,7 +189,7 @@ article {
         font-family:"Hiragino Sans GB","WenQuanYi Micro Hei","Microsoft YaHei",tahoma,arial,simsun;
 	}
 	article h3{
-        background: rgba(0, 0, 0, 0.05) none repeat scroll 0 0;
+        background: rgba(0, 0, 0, 0.1) none repeat scroll 0 0;
         border-radius: 3px;
         display: inline;
         font-size: 16px;
@@ -237,11 +236,6 @@ article {
 		border:1px solid rgba(102,128,153,0.2);
 		padding:5px;
 	}
-	article code {
-		background: #272822;
-		color: #d1d1c9;
-		border: none;
-	}
 	article ol,
 	article ul {
 		margin-left: 20px;
@@ -277,20 +271,36 @@ footer {
 
 /* 手机优化 */
 
-.mobile_nav { display: none; }
+.mobile_nav {
+    display: none;
+    background:rgba(0,0,0,0.4);
+    border-radius: 5px;
+    width:30px;
+    height:30px;
+    text-align:center;
+    line-height:30px;
+    color:#fff;
+    font-size:20px;
+    margin-bottom:20px;
+    cursor: pointer;
+}
+.mobile_content {
+    display: none;
+    margin-bottom:15px;
+    font-size: 18px;
+    border: 1px solid #666;
+    }
+    .mobile_content a {
+        float: left;
+        color: #666;
+    }
+    .mobile_content span {
+        float: right;
+}
+
 @media screen and (max-width: 361px) {
     .mobile_nav{
         display: block;
-        background:rgba(0,0,0,0.4);
-        border-radius: 5px;
-        width:30px;
-        height:30px;
-        text-align:center;
-        line-height:30px;
-        color:#fff;
-        font-size:20px;
-        margin-bottom:20px;
-        cursor: pointer;
     }
     .left {
         display: none;
@@ -306,4 +316,11 @@ footer {
     .left_box a{
         color:#fff;
     }
+    .left .outline {
+        border: 1px solid #666;
+    }
+    .left .outline > a{
+        display: none;
+    }
 } 
+
