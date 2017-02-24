@@ -89,7 +89,7 @@ header {
 .right {
 	float: left;
 	max-width: 800px;
-    min-width: 480px;
+    min-width: 360px;
     margin-bottom: 10px;
     }
     .right .right_box {
@@ -187,9 +187,11 @@ article {
         font-family:"Hiragino Sans GB","WenQuanYi Micro Hei","Microsoft YaHei",tahoma,arial,simsun;
 	}
 	article h3{
-        font-size: 20px;
-        margin:20px 0 10px;
-        font-family:"Hiragino Sans GB","WenQuanYi Micro Hei","Microsoft YaHei",tahoma,arial,simsun;
+        background: rgba(0, 0, 0, 0.05) none repeat scroll 0 0;
+        border-radius: 3px;
+        display: inline;
+        font-size: 16px;
+        padding: 0 5px;
     }
 	article .read {
 		float:right;
@@ -208,14 +210,11 @@ article {
     article .copyright a:hover{
     	text-decoration:underline;
     }
-    article .copyright .qrcode {
-    	float: right;
-    	width:70px;
-    	height:70px;
-    	background: #ccc;
-    	margin-top: -70px;
+    article .copyright .info {
+    	float: left;
 	}
-	article .copyright .qrcode img{
+	article .copyright img{
+	    float: right;
         width:70px;
         height:70px;
     }
