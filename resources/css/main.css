@@ -70,6 +70,10 @@ header {
 		}
 		.outline ul{
             margin-left: 15px;
+            color: #999;
+        }
+        .outline ul a {
+            color: #999;
         }
         .outline li{
             list-style-type:circle;
@@ -111,16 +115,14 @@ header {
     .right .right_box .excerpt{
     	color:#666;
     	line-height: 2;
-    	font-family: "楷体";
+    	font-family: simsun,"宋体";
     }
     .right .right_box .excerpt a{
         color:#666;
     }
     .right .right_box .excerpt a.read-all {
-    	background: #c00;
-    	color: #fff;
-    	border-radius: 5px;
-    	font-family: "楷体";
+    	color: #ff6688;
+    	font-family: "Hiragino Sans GB","WenQuanYi Micro Hei","Microsoft YaHei",tahoma,arial,simsun;
     }
     .right .pagination {
     	border-top: 1px dashed #ccc;
@@ -169,7 +171,7 @@ article {
 	article li,
 	article > blockquote{
 	    line-height: 2;
-        font-family: "宋体";
+        font-family: simsun,"宋体";
         font-size: 18px;
 	}
 	article #markdown-toc {
