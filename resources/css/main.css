@@ -323,3 +323,7 @@ footer {
     }
 } 
 
+/* 其他 */
+
+.cloud-tie-join-count { float: right; margin-top: -20px; }
+.cloud-tie-join-count .join-count { color: #ff6688; }
