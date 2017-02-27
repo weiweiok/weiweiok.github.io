@@ -7,13 +7,13 @@
     {% include header.html %}
     
     <div class="mobile_content fixed">
-        <a href="javascript:history.go(-1);">&lt; 返回</a>
+        <a href="javascript:read_progress();">&lt; 返回</a>
         <span>目录 +</span>
     </div>
     
 	<div class="left">
 		<div class="left_box outline">
-	        <a href="javascript:history.go(-1);">&lt; 返回</a>
+	        <a href="javascript:read_progress();">&lt; 返回</a>
 	        <ol></ol>
 	    </div>
 	</div>
@@ -70,11 +70,5 @@
         {% include footer.html %}
     </div>
 
-	<script type="text/javascript">
-		// 目录
-		var TOCString = document.querySelector('#markdown-toc').innerHTML
-        var contentUl = document.querySelector('.outline ol')
-        contentUl.insertAdjacentHTML('afterBegin', TOCString);
-	</script>
 </body>
 </html>
