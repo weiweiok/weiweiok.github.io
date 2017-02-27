@@ -45,9 +45,9 @@
         if (cu) { cu.innerHTML = cc ? "长按复制或扫码" : "点击查看" }
     }
     // content
-    var TOCString = document.querySelector('#markdown-toc').innerHTML
+    var TOCString = document.querySelector('#markdown-toc')
     var contentUl = document.querySelector('.outline ol')
     if(TOCString && contentUl) {
-        contentUl.insertAdjacentHTML('afterBegin', TOCString);
+        contentUl.insertAdjacentHTML('afterBegin', TOCString.innerHTML);
     }
 }());
