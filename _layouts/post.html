@@ -22,7 +22,12 @@
 		
         <article>
         	<h1>{{ page.title }}</h1>
-	        <p class="read">阅读:<span id="busuanzi_value_page_pv">0</span></p>
+	        <p class="read">
+                <span>阅读:</span>
+                <span id="busuanzi_value_page_pv">0</span>
+                <span>评论:</span>
+	            <a class="cloud-tie-join-count" href="javascript:void(0);"><span class="join-count">0</span></a>
+	        </p>
 	        <div class="copyright fixed">
 	        	<div class="info">
 	        		{% if page.author=="weiwei" %}
