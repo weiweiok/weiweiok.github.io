@@ -4,7 +4,7 @@ function storage_progress() {
     sessionStorage.setItem("list_url", window.location.href);
 }
 function read_progress() {
-    var list_url = sessionStorage.setItem("list_url");
+    var list_url = sessionStorage.getItem("list_url");
     if (list_url) {
         sessionStorage.removeItem("list_url");
         window.location.href = list_url;
