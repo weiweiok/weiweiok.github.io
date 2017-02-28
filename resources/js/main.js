@@ -50,4 +50,32 @@
     if(TOCString && contentUl) {
         contentUl.insertAdjacentHTML('afterBegin', TOCString.innerHTML);
     }
+    // mobile comment
+    var coment_theme  = '<style type="text/css">';
+        coment_theme += '#js-tie-sdk-wrapper .tie-title-bar.z-fix-mode { background: none; padding:0; } ';
+        coment_theme += '#js-tie-sdk-wrapper .tie-title-bar .tie-title { display: none; } ';
+        coment_theme += '#js-tie-sdk-wrapper .tie-title-bar .user-info{ float: none; margin:0; padding:0; } ';
+        coment_theme += '#js-tie-sdk-wrapper .tie-title-bar .fix-input{ margin: 0; text-indent: -9999em; border-radius:0; height: 2rem; background: #f5f4df; border: 1px solid #d3d3d3; } ';
+        coment_theme += '#js-tie-sdk-wrapper .tie-tab-bar{ display: none; } ';
+        coment_theme += '#js-tie-sdk-wrapper .tie-panel-bar{ margin: 0; } ';
+        coment_theme += '#js-tie-sdk-wrapper .tie-list .single-tie{ border: 1px dotted #d3d3d3; margin-bottom: 0.2rem; } ';
+        coment_theme += '#js-tie-sdk-wrapper .tie-list .single-tie .tie-bdy .bdy-inner{ margin-left: 0.2rem; } ';
+        coment_theme += '#js-tie-sdk-wrapper .tie-list .single-tie .photo, ';
+        coment_theme += '#js-tie-sdk-wrapper .tie-panel-bar .tie-empty-tip, ';
+        coment_theme += '#js-tie-sdk-wrapper .tie-panel-bar .tie-no-more{ display: none; border: none; }';
+        coment_theme += '</style>';
+    var comment_try_count = 0;
+    var comment_refresh_theme = function() {
+        if (comment_try_count >= 60) { clearInterval(comment_timer); }
+        var comment_iframe = document.getElementById("tie-js-sdk-ifr").contentWindow.document.querySelector("body");  
+        if (comment_iframe) { 
+            comment_iframe.insertAdjacentHTML("beforeEnd", coment_theme);
+            clearInterval(comment_timer);
+            return;
+        }
+        comment_try_count ++;
+    }
+    if (is_mobile()) {
+        var comment_timer = setInterval(comment_refresh_theme, 500);
+    }
 }());
