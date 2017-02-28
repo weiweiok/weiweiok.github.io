@@ -66,14 +66,13 @@
         coment_theme += '</style>';
     var comment_try_count = 0;
     var comment_refresh_theme = function() {
-        if (comment_try_count >= 60) { clearInterval(comment_timer); }
+        if (comment_try_count >= 60) { clearInterval(comment_timer); } else { comment_try_count ++; }
         var comment_iframe = document.getElementById("tie-js-sdk-ifr").contentWindow.document.querySelector("body");  
         if (comment_iframe) { 
             comment_iframe.insertAdjacentHTML("beforeEnd", coment_theme);
             clearInterval(comment_timer);
             return;
         }
-        comment_try_count ++;
     }
     if (is_mobile()) {
         var comment_timer = setInterval(comment_refresh_theme, 500);
