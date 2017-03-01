@@ -8,7 +8,7 @@ ul,li { list-style-type: none; }
 table { border-collapse:collapse; border-spacing:0; empty-cells:show; }
 
 h1,h2,h3,h4,h5,h6,b {  font-weight:normal;}
-body { font-family: "Hiragino Sans GB","WenQuanYi Micro Hei","Microsoft YaHei",tahoma,arial,simsun; }
+body { font-family: "Hiragino Sans GB","WenQuanYi Micro Hei","Microsoft YaHei",tahoma,simsun; }
 a { text-decoration: none;  }
 a:active, a:hover { text-decoration:none; }
 a:focus { outline: none; }

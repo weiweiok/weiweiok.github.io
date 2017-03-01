@@ -77,6 +77,6 @@
     if (is_mobile()) {
         //var comment_timer = setInterval(comment_refresh_theme, 500);
         var ctps = document.getElementById("cloud-tie-plastic-surgery");
-        if(ctps) { ctps.style.display = "block"; }  else { alert(ctps); }
+        if(ctps) { ctps.style.display = "block"; } 
     }
 })();
