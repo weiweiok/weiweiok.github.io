@@ -40,7 +40,6 @@ header {
 			display: block;
 			padding: 4px;
 			color: #666;
-			font-size: 18px;
 			margin-bottom: 1px;
 			font-family: "Hiragino Sans GB","Microsoft YaHei";
 		}
@@ -72,7 +71,7 @@ header {
 			display: inline;
 			padding: 0;
 			line-height: 1.5;
-			font-family: SimKai,'ST Kaiti';
+			font-family: '楷体','ST Kaiti';
 }
 
 .right {
@@ -187,7 +186,7 @@ article {
         background: rgba(0, 0, 0, 0.1) none repeat scroll 0 0;
         border-radius: 3px;
         display: inline;
-        padding: 2px 5px 0;
+        padding: 2px 5px 0px 5px;
     }
 	article .read {
 		float:right;
@@ -199,6 +198,8 @@ article {
     	background: rgba(0,0,0,0.05);
     	padding: 10px;
 		margin: 15px 0;
+		font-size: 16px;
+		line-height: 16px;
     }
     article .copyright a{
     	color: #999;
@@ -211,8 +212,8 @@ article {
 	}
 	article .copyright img{
 	    float: right;
-        width:70px;
-        height:70px;
+        width:64px;
+        height:64px;
     }
 	article blockquote{
 		color: #999;

@@ -8,8 +8,7 @@ permalink: /:categories/:title.html
 # 分类设置
 ww_categories: [
 ["php",  "PHP笔记"], 
-["js",   "JavaScript"],
-["git",  "github"]
+["web",  "Web开发"]
 ]
 
 
@@ -28,4 +27,4 @@ excerpt_separator: "\n\n\n\n"
 
 # 分页设置
 gems: [jekyll-paginate]
-paginate: 1
+paginate: 5
