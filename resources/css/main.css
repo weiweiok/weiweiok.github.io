@@ -3,7 +3,7 @@
 body {
 	margin: 0 20px;
 	background:#f5f5d5;
-	font-family: 'Courier New', simsun, 'ST Song';
+	font-family:  simsun, 'ST Song';
 }
 
 header {
@@ -154,9 +154,9 @@ article {
 	}
 	article > p,
 	article li,
-	article > blockquote{
+	article > blockquote,
+	article .author {
 	    line-height: 2;
-        font-family: simsun;
         font-size: 18px;
         word-wrap:break-word ;
 	}
@@ -186,9 +186,13 @@ article {
 		font-size:14px;
 		margin-top:-20px;
 	}
+	article .read .join-count {
+	    color:#000;
+	}
 	article .author {
-	    border-top:1px solid #666;
+	    border-top:1px solid #999;
 	    margin: 15px 0;
+	    padding-top: 10px;
 	}
 	article .copyright {
     	color: #999;
