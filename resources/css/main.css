@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    height: 100px;
+    height: 80px;
     overflow: hidden; 
     background: url("../images/logo_32.png") no-repeat left 20px;
 	}
@@ -88,6 +88,9 @@ header {
     	font-size: 24px;
     	color: #000;
     }
+    .right .right_box .label {
+        margin-bottom: 5px;
+    }
     .right .right_box .label span{
     	background: rgba(102,128,153,0.075);
 		color: rgba(44,63,81,0.5);
@@ -110,6 +113,9 @@ header {
     .right .right_box .excerpt a.read-all {
     	color: #ff6688;
     	font-family: "Hiragino Sans GB","Microsoft YaHei";
+    }
+    .right .right_box .excerpt img {
+        max-width: 800px;
     }
     .right .pagination {
     	border-top: 1px dashed #ccc;
@@ -193,6 +199,7 @@ article {
 	    border-top:1px solid #999;
 	    margin: 15px 0;
 	    padding-top: 10px;
+	    color: #999;
 	}
 	article .copyright {
     	color: #999;
@@ -327,6 +334,7 @@ footer {
     .mobile_content+.left .outline > a{
         display: none;
     }
+    .right .right_box .excerpt img ,
     article > p > img {
        max-width: 320px;
     }
