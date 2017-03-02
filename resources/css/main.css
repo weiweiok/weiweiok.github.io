@@ -138,11 +138,6 @@ header {
         border-color: #ff6688;
         color: #ff6688;
     }
-	.right .comment {
-    	border-top: 1px dashed #ccc;
-    	margin-top: 20px;
-    	padding-top: 20px;
-    }
 	.right .plugin {
 		border-top: 1px dashed #ccc;
 		margin-top: 20px;
@@ -190,6 +185,10 @@ article {
 		float:right;
 		font-size:14px;
 		margin-top:-20px;
+	}
+	article .author {
+	    border-top:1px solid #666;
+	    margin: 15px 0;
 	}
 	article .copyright {
     	color: #999;
@@ -328,8 +327,3 @@ footer {
        max-width: 320px;
     }
 } 
-
-/* 其他 */
-
-h2 + .cloud-tie-join-count { float: right; margin-top: -20px; }
-.cloud-tie-join-count .join-count { color: #ff6688; }

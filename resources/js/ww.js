@@ -9,7 +9,7 @@ function read_progress() {
         sessionStorage.removeItem("list_url");
         window.location.href = list_url;
     } else {
-        window.history.go(-1);
+        window.history.back();
     }
 }
 
