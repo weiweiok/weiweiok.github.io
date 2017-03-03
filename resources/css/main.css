@@ -97,6 +97,8 @@ header {
     		color: rgba(44,63,81,0.5);
     		padding: 2px 5px;
     		margin-right: 5px;
+    		font-family: "Hiragino Sans GB","Microsoft YaHei";
+    		border-radius: 2px;
         }
     	.right .label a{
     		color: rgba(44,63,81,0.5);
@@ -176,6 +178,9 @@ article {
         border-radius: 3px;
         display: inline;
         padding: 2px 5px 0px 5px;
+        margin:30px 0 20px;
+        text-shadow: 0 1px white;
+        font-weight: bold;
     }
     article > p,
     article > blockquote,
@@ -329,7 +334,9 @@ footer {
     article > p > img {
        max-width: 320px;
     }
-    
+    article .copyright {
+        line-height: 1;
+    }
     article .copyright img{
         width: 64px; height: 64px;
     }
