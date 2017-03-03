@@ -198,7 +198,7 @@ article {
         word-wrap:break-word ;
     }
     article > p {
-        margin-top:20px 0;    
+        margin:20px 0;    
     }
 	article .copyright {
     	color: #999;
