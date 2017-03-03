@@ -8,7 +8,8 @@ permalink: /:categories/:title.html
 # 分类设置
 ww_categories: [
 ["php",  "PHP笔记"], 
-["web",  "Web开发"]
+["web",  "Web开发"],
+["talk", "杂谈"]
 ]
 
 
