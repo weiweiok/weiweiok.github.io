@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  "在github上建博客"
+title:  "在 Github 上建博客"
 author: weiwei
 categories: talk
 ---
 
 ![](http://imglf0.nosdn.127.net/img/MzVqS0VIeGlFdmx1anpJQ1YzZGEvd21OcXdMcnNWaWsrWXBHYzhsR0dqRUd4TVIvTzVndjlRPT0.png)
-雁过尚且留声，人生岂能无痕
+某天在知乎无意中看到，一群人玩腻了Wordpress，在聊GithubPage，于是去了解了下，才发现还能这么玩……并且5年前大神们就这么玩了…… ⊙ˍ⊙ 于是勾起了搭个博客的欲望，雁过尚且留声，人生岂能无痕。
 
 
 
@@ -20,7 +20,7 @@ categories: talk
 
 终于有一天，有了写作和收藏内容的需求，在百度空间这棵大树上建了个博客，之所以选择百度空间，是因为可以自定义CSS，从此走向另一个极端，内容为主页面基本极简风，结果……几年后百度空间宣布关闭了…… (ﾟ皿ﾟﾒ)!!! 大树也靠不住啊
 
-然后几年都没再写博，日常笔记什么的都扔硬盘了，后来一直有再整个博客的想法，这时国内博客已经是 博客园、CSDN 之类的天下了，但一直没去建，始终觉得颜值略低……另外百度空间的阴影还在ಥ_ಥ，一天在知乎无意中看到，另一条技能树的人玩腻了Wordpress，在聊GithubPage，于是去了解了下，才发现……原来5年前大神们就这么玩了…… ⊙ˍ⊙ 
+然后几年都没再写博，日常笔记什么的都扔硬盘了，后来一直有再整个博客的想法，这时国内博客已经是 博客园、CSDN 之类的天下了，但始终觉得颜值略低一直没去建……
 
 
 ## 新的开始
@@ -29,7 +29,7 @@ categories: talk
 在github上建博客，网上教程多如牛毛，我就不打算写教程了，写一下如何看教程≖‿≖✧
 
 
-### 1、原理介绍
+## 1、原理介绍
 
 有个叫 github 的网站，为开源项目提免费供托管服务，然而并不是所有项目都有自己的“官网”，于是 github 推出了一个叫 [Github Pages](https://pages.github.com/) 的服务，免费提供300M的静态空间，还能绑定自己的域名，利用 github pages 建个博客，既免去了自己购买和维护服务器的麻烦，又能自己设计页面。
 
@@ -39,7 +39,7 @@ categories: talk
 
 最后，这些生成器都是命令行操作，并没有 word 那么高大上的界面，怎么编辑图文呢？答案就是一种叫 [Markdown](https://zh.wikipedia.org/wiki/Markdown) 的书写规范，通过一些约定好的文字符号，就可以用纯文本表示出图片、超级链接、标题等。这里有一个 [在线 Markdown 编辑器](https://maxiang.io/) 体验一下，立即学会。
 
-### 2、开通 Github pages
+## 2、开通 Github pages
 
 首先，要简单学一下 Git （[廖雪峰的 Git 教程](http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000)），只用来建博客的话，了解 Git 是干什么的，学会本地安装 Git 工具，了解下 `add` 、`commit`、`push`、`clone` 4个命令就够用了。
 
@@ -49,7 +49,7 @@ categories: talk
 
 最后，照着（[Github 帮助文档](https://help.github.com/articles/setting-up-an-apex-domain/#configuring-a-records-with-your-dns-provider)），把自己的域名，添加A记录，解析到说明中提供的 IP 地址。然后在仓库里创建个 `CNAME` 文件（无扩展名），把域名写进去（不含 http:// 和 www），然后上传，稍等片刻就可以用自己的域名来访问了。
 
-### 3、使用 Jeykll 主题
+## 3、使用 Jeykll 主题
 
 首先，看一遍（[阮一峰的 Jekyll 入门教程](http://www.ruanyifeng.com/blog/2012/08/blogging_with_jekyll.html)），基本就了解其工作原理了。
 
@@ -63,7 +63,7 @@ categories: talk
 
 最后，如果想完全自己制作主题，建议在本地安装一个 Jekyll 来调试，否则每次调试都 push 到 github 很痛苦，具体安装方法官网文档和百度都有，这里有个[长篇完整教程](http://beiyuu.com/github-pages)。
 
-### 4、其他问题
+## 4、其他问题
 
 评论问题：静态站点，评论功能只能选择第三方的JS插件，常见的有： [Disqus](http://disqus.com)、[搜狐畅言](http://changyan.kuaizhan.com/) 、 [网易云跟帖](https://gentie.163.com/info.html)、[多说](http://duoshuo.com/) 、[有言](http://www.uyan.cc/) 、[来必力](https://livere.com/city-demo/city)。Disqus 是国外最好的，可惜被墙了╮(╯▽╰)╭ ，搜狐畅言是国内最好的，可惜要备案号 ╮(╯▽╰)╭ ，来必力是韩国的，支持国内社交账号，但速度一般。
 
