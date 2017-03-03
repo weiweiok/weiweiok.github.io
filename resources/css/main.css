@@ -177,52 +177,20 @@ article {
         display: inline;
         padding: 2px 5px 0px 5px;
     }
-	article .read {
-		float:right;
-		font-size:14px;
-		margin-top:-20px;
-	}
-	article .author {
-	    border-top:1px solid #999;
-	    margin: 15px 0;
-	    padding-top: 10px;
-	    color: #999;
-	}
-	article > p > img {
-       max-width: 800px;
-    }
     article > p,
-    article li,
     article > blockquote,
-    article .author {
+    article li{
         line-height: 2;
         font-size: 18px;
         word-wrap:break-word ;
     }
-    article > p {
-        margin:20px 0;    
+    article > p,
+    article > blockquote,
+    article > table{
+        margin:20px 0; 
     }
-	article .copyright {
-    	color: #999;
-    	background: rgba(0,0,0,0.05);
-    	padding: 10px;
-		margin: 15px 0 30px 0;
-		font-size: 16px;
-		line-height: 2;
-        }
-        article .copyright a{
-        	color: #999;
-        }
-        article .copyright a:hover{
-        	text-decoration:underline;
-        }
-        article .copyright .info {
-        	float: left;
-    	}
-    	article .copyright img{
-    	    float: right;
-            width:128px;
-            height:128px;
+    article > p > img {
+       max-width: 800px;
     }
 	article blockquote{
 		color: #999;
@@ -257,6 +225,28 @@ article {
 	article a:hover {
 		color: #0f4d8a;
 		text-decoration: underline;
+	}
+    article .copyright {
+        color: #999;
+        background: rgba(0,0,0,0.05);
+        padding: 10px;
+        margin: 15px 0 50px 0;
+        font-size: 16px;
+        line-height: 2;
+        }
+        article .copyright a{
+            color: #999;
+        }
+        article .copyright a:hover{
+            text-decoration:underline;
+        }
+        article .copyright .info {
+            float: left;
+        }
+        article .copyright img{
+            float: right;
+            width:128px;
+            height:128px;
 }
 
 
@@ -338,5 +328,9 @@ footer {
     .right .right_box .excerpt img ,
     article > p > img {
        max-width: 320px;
+    }
+    
+    article .copyright img{
+        width: 64px; height: 64px;
     }
 } 
