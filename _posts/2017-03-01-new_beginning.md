@@ -5,7 +5,8 @@ author: weiwei
 categories: talk
 ---
 
-折腾个博客，写写记记，留点痕迹
+![](http://imglf0.nosdn.127.net/img/MzVqS0VIeGlFdmx1anpJQ1YzZGEvd21OcXdMcnNWaWsrWXBHYzhsR0dqRUd4TVIvTzVndjlRPT0.png)
+雁过尚且留声，人生岂能无痕
 
 
 
@@ -64,9 +65,14 @@ categories: talk
 
 ### 4、其他问题
 
-静态站点，评论功能，只能选择第三方的JS插件，常见的有： [Disqus](http://disqus.com)、[搜狐畅言](http://changyan.kuaizhan.com/) 、 [网易云跟帖](https://gentie.163.com/info.html)、[多说](http://duoshuo.com/) 、[有言](http://www.uyan.cc/) 、[来必力](https://livere.com/city-demo/city)。Disqus 是国外最好的，可惜被墙了╮(╯▽╰)╭ ，搜狐畅言是国内最好的，可惜要备案号 ╮(╯▽╰)╭ ，来必力是韩国的，支持国内社交账号，但速度一般。
+* 评论问题：静态站点，评论功能只能选择第三方的JS插件，常见的有： [Disqus](http://disqus.com)、[搜狐畅言](http://changyan.kuaizhan.com/) 、 [网易云跟帖](https://gentie.163.com/info.html)、[多说](http://duoshuo.com/) 、[有言](http://www.uyan.cc/) 、[来必力](https://livere.com/city-demo/city)。Disqus 是国外最好的，可惜被墙了╮(╯▽╰)╭ ，搜狐畅言是国内最好的，可惜要备案号 ╮(╯▽╰)╭ ，来必力是韩国的，支持国内社交账号，但速度一般。
 
-然后是图片问题，Github pages 空间有限传图的话不太够用，于是需要找图床，目前还没有特别完美的方案，国外的好图床基本被墙了，国内利用社交平台发图外链会有防盗链无法使用风险，著名的七牛图床需要备案号 (￣﹏￣) ，其他一些方案见[知乎](https://www.zhihu.com/question/50747615?sort=created)。
+* 图片问题：Github pages 空间有限传图的话不太够用，于是需要找图床，目前还没有特别完美的方案，国外的好图床基本被墙了，国内利用社交平台发图外链会有防盗链无法使用风险，著名的七牛图床需要备案号 (￣﹏￣) ，其他一些方案见[知乎](https://www.zhihu.com/question/50747615?sort=created)。
+
+## 更多选择
+
+其实国内也有类似 github 的服务，比如：[码市（coding）](https://coding.net/)，开源中国的 [码云](http://git.oschina.net/) 等。
+
 
 
 (完)
