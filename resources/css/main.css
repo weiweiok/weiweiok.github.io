@@ -155,33 +155,21 @@ header {
 article {
 	margin-bottom:50px;
 	}
-	article > p > img {
-	   max-width: 800px;
-	}
-	article > p,
-	article li,
-	article > blockquote,
-	article .author {
-	    line-height: 2;
-        font-size: 18px;
-        word-wrap:break-word ;
-	}
 	article #markdown-toc {
-		display: none;
-	}
+        display: none;
+    }
 	article h1{
         font-size: 32px;
         font-family: "Hiragino Sans GB","Microsoft YaHei";
     }
 	article h2{
-		font-size: 24px;
+		font-size: 28px;
 		font-weight: bold;
         border-bottom:1px solid rgba(102,128,153,0.2);
         margin:30px 0 20px;
 	}
 	article h3{
-	    font-size: 16px;
-	    font-weight: bold;
+	    font-size: 20px;
         background: rgba(0, 0, 0, 0.1) none repeat scroll 0 0;
         border-radius: 3px;
         display: inline;
@@ -198,6 +186,20 @@ article {
 	    padding-top: 10px;
 	    color: #999;
 	}
+	article > p > img {
+       max-width: 800px;
+    }
+    article > p,
+    article li,
+    article > blockquote,
+    article .author {
+        line-height: 2;
+        font-size: 18px;
+        word-wrap:break-word ;
+    }
+    article > p {
+        margin-top:20px 0;    
+    }
 	article .copyright {
     	color: #999;
     	background: rgba(0,0,0,0.05);
