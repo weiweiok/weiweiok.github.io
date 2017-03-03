@@ -87,6 +87,7 @@ header {
     .right .right_box h2 a{
     	font-size: 24px;
     	color: #000;
+    	font-family: "Hiragino Sans GB","Microsoft YaHei";
     }
     .right .right_box .label {
         margin-bottom: 5px;
