@@ -83,67 +83,67 @@ header {
     }
     .right .right_box {
     	margin-bottom: 50px;
+        }
+        .right .right_box h2 a{
+        	font-size: 24px;
+        	color: #000;
+        	font-family: "Hiragino Sans GB","Microsoft YaHei";
     }
-    .right .right_box h2 a{
-    	font-size: 24px;
-    	color: #000;
-    	font-family: "Hiragino Sans GB","Microsoft YaHei";
-    }
-    .right .right_box .label {
+    .right .label {
         margin-bottom: 5px;
-    }
-    .right .right_box .label span{
-    	background: rgba(102,128,153,0.075);
-		color: rgba(44,63,81,0.5);
-		padding: 2px 5px;
-		margin-right: 5px;
-    }
-	.right .right_box .label span a{
-		color: rgba(44,63,81,0.5);
+        }
+        .right .label span{
+        	background: rgba(102,128,153,0.075);
+    		color: rgba(44,63,81,0.5);
+    		padding: 2px 5px;
+    		margin-right: 5px;
+        }
+    	.right .label a{
+    		color: rgba(44,63,81,0.5);
+    	}
+    	.right .label a:hover{
+    		color: rgba(44,63,81,0.7);
 	}
-	.right .right_box .label span a:hover{
-		color: rgba(44,63,81,0.7);
-	}
-    .right .right_box .excerpt{
+    .right .excerpt{
     	color:#666;
     	line-height: 2;
-    }
-    .right .right_box .excerpt a{
-        color:#666;
-    }
-    .right .right_box .excerpt a.read-all {
-    	color: #ff6688;
-    	font-family: "Hiragino Sans GB","Microsoft YaHei";
-    }
-    .right .right_box .excerpt img {
-        max-width: 800px;
+        }
+        .right .excerpt a{
+            color:#666;
+        }
+        .right .excerpt a.read-all {
+        	color: #ff6688;
+        	font-family: "Hiragino Sans GB","Microsoft YaHei";
+        }
+        .right .excerpt img {
+            max-width: 800px;
     }
     .right .pagination {
     	border-top: 1px dashed #ccc;
     	margin-top: 20px;
     	line-height: 3;
     	padding: 20px 0;
-    }
-    .right .pagination span,
-    .right .pagination a{
-        text-align: center;
-        padding: 5px 10px;
-        border:1px solid #cccccc;
-        border-radius: 3px;
-        background: #fff;
-        margin: 5px;
-        font-size: 16px;
-        line-height: 16px;
-        color: #000;
-    }
-    .right .pagination .current{
-        background: #ff6688;
-        border-color: #ff6688;
-        color: #fff;
-    }
-    .right .pagination a:hover{
-        border-color: #ff6688;
-        color: #ff6688;
+        }
+        .right .pagination span,
+        .right .pagination a{
+            text-align: center;
+            padding: 5px 10px;
+            border:1px solid #cccccc;
+            border-radius: 3px;
+            background: #fff;
+            margin: 5px;
+            font-size: 16px;
+            line-height: 16px;
+            color: #000;
+        }
+        .right .pagination .current{
+            background: #ff6688;
+            border-color: #ff6688;
+            color: #fff;
+        }
+        .right .pagination a:hover{
+            border-color: #ff6688;
+            color: #ff6688;
     }
 	.right .plugin {
 		border-top: 1px dashed #ccc;
@@ -207,21 +207,21 @@ article {
     	padding: 10px;
 		margin: 15px 0;
 		font-size: 16px;
-		line-height: 16px;
-    }
-    article .copyright a{
-    	color: #999;
-    }
-    article .copyright a:hover{
-    	text-decoration:underline;
-    }
-    article .copyright .info {
-    	float: left;
-	}
-	article .copyright img{
-	    float: right;
-        width:64px;
-        height:64px;
+		line-height: 2;
+        }
+        article .copyright a{
+        	color: #999;
+        }
+        article .copyright a:hover{
+        	text-decoration:underline;
+        }
+        article .copyright .info {
+        	float: left;
+    	}
+    	article .copyright img{
+    	    float: right;
+            width:128px;
+            height:128px;
     }
 	article blockquote{
 		color: #999;

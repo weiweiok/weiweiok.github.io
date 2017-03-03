@@ -26,7 +26,7 @@ categories: talk
 ## 新的开始
 
 ![](http://imglf.nosdn.127.net/img/MzVqS0VIeGlFdm5HYzEwWXRhUTA3SWdtVUVGMzJQZHNPRGM0MVVPRUw0QWl0eUhvRFlsa3V3PT0.png)
-作为连git都太不会用的人，想在github上建博客，网上教程多如牛毛，我就不打算写教程了，写一下如何看教程≖‿≖✧
+在github上建博客，网上教程多如牛毛，我就不打算写教程了，写一下如何看教程≖‿≖✧
 
 
 ### 1、原理介绍
