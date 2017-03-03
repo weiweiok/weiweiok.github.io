@@ -90,7 +90,7 @@ header {
         	font-family: "Hiragino Sans GB","Microsoft YaHei";
     }
     .right .label {
-        margin-bottom: 5px;
+        margin: 5px 5px 5px 0;
         }
         .right .label span{
         	background: rgba(102,128,153,0.075);
