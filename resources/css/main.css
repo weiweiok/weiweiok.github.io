@@ -167,7 +167,7 @@ article {
         margin-bottom: 20px;
     }
 	article h2{
-		font-size: 28px;
+		font-size: 32px;
 		font-weight: bold;
         border-bottom:1px solid rgba(102,128,153,0.2);
         margin:80px 0 20px;
@@ -177,11 +177,10 @@ article {
 	    font-size: 20px;
         background: rgba(0, 0, 0, 0.1) none repeat scroll 0 0;
         border-radius: 3px;
-        display:inline-block
+        display: inline-block;
         padding: 2px 5px 0px 5px;
-        margin:30px 0 10px;
-        text-shadow: 0 1px white;
-        
+        margin: 30px 0 10px;
+        font-weight: bold;
     }
     article > p,
     article > blockquote,
