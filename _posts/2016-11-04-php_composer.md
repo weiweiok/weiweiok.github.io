@@ -14,7 +14,7 @@ categories: php
 
 ## 一、Composer 是什么
 
-### 相关资源：
+### 相关资源
 
 官网：[https,://getcomposer.org](https://getcomposer.org)
 
@@ -22,15 +22,14 @@ categories: php
 
 国内资源镜像：[http://pkg.phpcomposer.com](http://pkg.phpcomposer.com)
 
-### 官方文档里节选２段：
+### 官方文档里节选２段
 
 > “Composer 是 PHP 中的依赖关系管理工具。
 > 它允许您声明项目依赖的库，它将为您管理（安装/更新）它们。”
-
-　
-
+  
 > “Composer 和包管理器（Yum、Apt）不是一种东西。
-> 它灵感来自 node's的npm 和 ruby的bundler。”
+> 它灵感来自 node's 的 npm 和 ruby 的 bundler。”
+
 
 ### 通俗理解
 
@@ -39,13 +38,13 @@ categories: php
 ## 二、安装
 
 Composer 需要 PHP5.3.2+ 以上版本，支持跨平台。
-
+  
 ### Windows 下安装
 
 　　有两种方法，第一种是使用安装程序。官网下载地址，[https://getcomposer.org/Composer-Setup.exe](https://getcomposer.org/Composer-Setup.exe)
 
 　　第二种是在命令提示行下通过命令完成，和 linux 安装过程类似，感兴趣可看官方文档，在 win 下用命令感觉真没必要，所以推荐第一种。
-
+  
 ### Linux 下安装
 
 首先，切换到 php 安装目录，下载安装脚本（一个php文件）：
