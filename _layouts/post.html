@@ -34,7 +34,7 @@
                     <p>版权协议：正文未经允许禁止转载，欢迎分享本文链接</p>
                     <p>本文地址：<a class="url" href="#">{{ site.url }}{{ page.url }}</a></p>
                     <p>作　　者：{{ page.author }}</p>
-                    <p>发布日期：{{ page.date | date: "%F" }}</p>
+                    <p>发布日期：{{ page.date | date: "%F" }}{{ page.cc }}</p>
                 {% else %}
                     {% if page.author=="weiwei" %}
                     <p>版权协议：<a class="protocol" href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh" target="_blank">自由转载-保持署名-非商业性使用-禁止演绎4.0</a></p>
