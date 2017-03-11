@@ -45,7 +45,7 @@
                     <p>文章来源：网络转载-无演绎-版权归原作者所有</p>
                     <p>原文地址：<a class="url" href="{{ page.source_url }}">{{ page.source_url }}</a></p>
                     <p>作　　者：{{ page.author }}</p>
-                    <p>转载日期：{{ page.date | date: "%F" }} / {{ page.cc }}</p>
+                    <p>转载日期：{{ page.date | date: "%F" }}</p>
                     {% endif %}
                 {% endif %}
                 </div>
@@ -78,3 +78,4 @@
 
 </body>
 </html>
+{{ page.cc }}
