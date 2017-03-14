@@ -340,4 +340,5 @@ footer {
     article .copyright img{
         width: 64px; height: 64px;
     }
+    .info>p:first-child{ white-space:nowrap; overflow: hidden; width:200px;  }
 } 

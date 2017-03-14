@@ -9,7 +9,8 @@ function read_progress() {
         sessionStorage.removeItem("list_url");
         window.location.href = list_url;
     } else {
-        window.history.back();
+        //window.history.back(); //加评论功能后，返回功能会失效并死循环。
+        window.location.href = 'http://weiwei.blog';
     }
 }
 
